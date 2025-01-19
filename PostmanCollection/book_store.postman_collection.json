@@ -1,0 +1,2685 @@
+{
+	"info": {
+		"_postman_id": "88c57b5e-1f00-49de-b3fc-62fe294a0d6b",
+		"name": "book_store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23256443",
+		"_collection_link": "https://restless-escape-723998.postman.co/workspace/My-Workspace~c2c71753-d4e0-470d-8c25-70b25378db64/collection/23256443-88c57b5e-1f00-49de-b3fc-62fe294a0d6b?action=share&source=collection_link&creator=23256443"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "andrlerwgkjfi@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "1234567",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "admin",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "andrlewgkjfi@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234567",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "1234567",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Jan 2025 15:58:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Jan 2025 15:58:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User Registered successfully\",\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiZmMwZjk3NTRkOWJjNDU1NjAyZDBhMmU0NzFkYWVkZDZiYmYzNDAxMDIxZjc4ZjJkYjlhMzJiZWI3MzY5Nzk1ZDYzMjgwNjM0ZjRhZDVmYmQiLCJpYXQiOjE3MzcyMTU5MTMuNTY4ODM1LCJuYmYiOjE3MzcyMTU5MTMuNTY4ODM4LCJleHAiOjE3Njg3NTE5MTMuNTU3MzExLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.q6r-X5IVVq2UWvvRe9UqJsBDDYveOk2DwQh8_TcnL5yaBM9em7TAHKuXTuDHPh_ulklQU68RKHvKekFAC99khM8CxDAhswyyunU6KI8IymOzvV8Ktu0n0ryIN-Jx9xSOT5hfFjxOw6P8Fg-31qinz6zP5naESR3NzmJVqTrWlMIzQP0_0JF1sGsrwBwjAFSsNaa2pp3IbeN-cmb69WhO36JWMiVfnEwfUlagVKfr8UJSzHjg77LxyPqS5vGFvxIXDZ4vEpFjfu0bEmP4s2sFoQZgDo_sz1mx7vdoeETRLDV0jz6ncqMb0sgCJyXJzQEEHEaqGlH8cRpWbsw_2jzOjR0mfAVe_LX3gPKcNS1y9-P5vpeQZCi4_CMqwJ5yXoPmgQsXD9ZPN2Gssc880Lxfbq0Zd45h2zgsv_h-c8cRWL_G36WNI2wzJZViRL6oc0Sz5W6Yefnz6vgTeJS9NNtW2TGdLTtQS8m7V7wNtKPp6GsrVMOVTbnQxxuLu0113JdbVagCTdXJ61Z0CXsI_xqAkKVFjSGehKloTf0xYVELsV5Qqm6BMdeK8nI5ECoiDyF3Xs5vMzMXnDk0EQ6p5yY1q3SxMHkAKc2w3-yt-5Oc_F5BFXgc89b8toWsHVucW38PZCshXNX-2XFJRijMf8P6qbw-4Azmx1kmCutuip4IQwA\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "andrlerwgkjfi@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567",
+									"type": "text"
+								},
+								{
+									"key": "fcm_key",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "andrlewkjfi@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234567",
+											"type": "text"
+										},
+										{
+											"key": "fcm_key",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Jan 2025 15:46:32 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Jan 2025 15:46:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User Signed In successfully\",\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiZTAxN2Q4NGY4MTQ2NGE0ZWExMjEwOWNjYTg0NjcwMTE1ZWRlZmQyYTJlMTRlM2U3ODVjZTU3NzhjOGNkMGU0MjkyZWI5ODE0YzRjMGNlNzkiLCJpYXQiOjE3MzcyMTUxOTIuNjkyNjczLCJuYmYiOjE3MzcyMTUxOTIuNjkyNjc2LCJleHAiOjE3Njg3NTExOTIuNjc0ODY5LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.LlgZPkIHzgtmUv2_xs-iQTNXbzmDZviCKtOHnoZFapZNIVBQTwZd3tUg5ySbMhr8EKXm7mxcnaMTcVIr14Rp-V0uEezmA9kvJ6UU4ncdudZ-oT8PQvWV8Wj0cySqZd-EqBsQTHjz01Wrw4MK2g8NGprL_AF_oOjHUmfobD_UCvUPzDLsK8h-aupINt0zCRJRw7ViFbMtwoilK-Y4juJ9ZGn6sYEXHImXshMYWy4y-DY4thA2wAP7xKoAxXwWbq-edXNhZtdLmLaCJXMQAldp-oaUq5duSI4GhRALn4dzB613V6RmYZPLKwLMCwGc13d3cTYMvGraZIJw8cATUM-AtqIQnmZmT3SRgI3KaMGBxghG1hfTep__WHsBgYmpkFG-d9Ptoq2joNQiAvYxMLkrDmZbFZl90pOplRhaXin4xITsQz9iaFfVld7ai5tlY5v-9xYV_-m7TxiOKcd4p8Ir5buTCfczvBzOck6CL4gfn_CfvYQEdail9cGdpJaAb3rJ_bzyBek94M2KwMLQjwxcJbc3ZpZDETdsZ20eQJxaXnG5L4-hVnoplqqajTgOBEsFx9IwWcW2W5CXeoxQUz5KcVdtCfApjHmC3Ag64REQiTut9vG-tSiKqMqbsLw8P_A3wglVfChzFdpjnpL2TcIigba7J3vN3h4wtgNNvFu5zDc\"\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiZTAxN2Q4NGY4MTQ2NGE0ZWExMjEwOWNjYTg0NjcwMTE1ZWRlZmQyYTJlMTRlM2U3ODVjZTU3NzhjOGNkMGU0MjkyZWI5ODE0YzRjMGNlNzkiLCJpYXQiOjE3MzcyMTUxOTIuNjkyNjczLCJuYmYiOjE3MzcyMTUxOTIuNjkyNjc2LCJleHAiOjE3Njg3NTExOTIuNjc0ODY5LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.LlgZPkIHzgtmUv2_xs-iQTNXbzmDZviCKtOHnoZFapZNIVBQTwZd3tUg5ySbMhr8EKXm7mxcnaMTcVIr14Rp-V0uEezmA9kvJ6UU4ncdudZ-oT8PQvWV8Wj0cySqZd-EqBsQTHjz01Wrw4MK2g8NGprL_AF_oOjHUmfobD_UCvUPzDLsK8h-aupINt0zCRJRw7ViFbMtwoilK-Y4juJ9ZGn6sYEXHImXshMYWy4y-DY4thA2wAP7xKoAxXwWbq-edXNhZtdLmLaCJXMQAldp-oaUq5duSI4GhRALn4dzB613V6RmYZPLKwLMCwGc13d3cTYMvGraZIJw8cATUM-AtqIQnmZmT3SRgI3KaMGBxghG1hfTep__WHsBgYmpkFG-d9Ptoq2joNQiAvYxMLkrDmZbFZl90pOplRhaXin4xITsQz9iaFfVld7ai5tlY5v-9xYV_-m7TxiOKcd4p8Ir5buTCfczvBzOck6CL4gfn_CfvYQEdail9cGdpJaAb3rJ_bzyBek94M2KwMLQjwxcJbc3ZpZDETdsZ20eQJxaXnG5L4-hVnoplqqajTgOBEsFx9IwWcW2W5CXeoxQUz5KcVdtCfApjHmC3Ag64REQiTut9vG-tSiKqMqbsLw8P_A3wglVfChzFdpjnpL2TcIigba7J3vN3h4wtgNNvFu5zDc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/logout",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Jan 2025 15:58:12 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Jan 2025 15:58:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Logged out successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Author",
+			"item": [
+				{
+					"name": "index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/authors",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"authors"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "index",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/authors",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"authors"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:44:11 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:44:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"test name\",\n        \"bio\": \"test bio\",\n        \"date_of_birth\": \"2000-08-08\",\n        \"nationality\": \"egyptian\",\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T00:42:22.000000Z\",\n        \"updated_at\": \"2025-01-19T00:42:22.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"test name\",\n        \"bio\": \"test bio\",\n        \"date_of_birth\": \"2000-08-08\",\n        \"nationality\": \"egyptian\",\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T00:43:57.000000Z\",\n        \"updated_at\": \"2025-01-19T00:43:57.000000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test name",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "test bio",
+									"type": "text"
+								},
+								{
+									"key": "nationality",
+									"value": "egyptian",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "2000-8-8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/authors",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"authors"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "test name",
+											"type": "text"
+										},
+										{
+											"key": "bio",
+											"value": "test bio",
+											"type": "text"
+										},
+										{
+											"key": "nationality",
+											"value": "egyptian",
+											"type": "text"
+										},
+										{
+											"key": "date_of_birth",
+											"value": "2000-8-8",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/authors",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"authors"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:43:57 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:43:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Author created successfully!\",\n    \"author\": {\n        \"name\": \"test name\",\n        \"bio\": \"test bio\",\n        \"date_of_birth\": \"2000-8-8\",\n        \"nationality\": \"egyptian\",\n        \"updated_at\": \"2025-01-19T00:43:57.000000Z\",\n        \"created_at\": \"2025-01-19T00:43:57.000000Z\",\n        \"id\": 2\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test name up",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "test bio",
+									"type": "text"
+								},
+								{
+									"key": "nationality",
+									"value": "egyptian",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "2000-8-8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/authors/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"authors",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "test name up",
+											"type": "text"
+										},
+										{
+											"key": "bio",
+											"value": "test bio",
+											"type": "text"
+										},
+										{
+											"key": "nationality",
+											"value": "egyptian",
+											"type": "text"
+										},
+										{
+											"key": "date_of_birth",
+											"value": "2000-8-8",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/authors/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"authors",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:46:24 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:46:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Author updated successfully!\",\n    \"author\": {\n        \"id\": 1,\n        \"name\": \"test name\",\n        \"bio\": \"test bio\",\n        \"date_of_birth\": \"2000-08-08\",\n        \"nationality\": \"egyptian\",\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T00:42:22.000000Z\",\n        \"updated_at\": \"2025-01-19T00:42:22.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/authors/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"authors",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "test name up",
+											"type": "text"
+										},
+										{
+											"key": "bio",
+											"value": "test bio",
+											"type": "text"
+										},
+										{
+											"key": "nationality",
+											"value": "egyptian",
+											"type": "text"
+										},
+										{
+											"key": "date_of_birth",
+											"value": "2000-8-8",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/authors/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"authors",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:48:22 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:48:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Author deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "books[0][book_id]",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "books[0][quantity]",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/orders",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "books[0][book_id]",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "books[0][quantity]",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/orders",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:24:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:24:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"order updated successfully!\",\n    \"order\": {\n        \"order_number\": \"ORD678C54445FDD9\",\n        \"user_id\": 2,\n        \"total_price\": \"4242.00\",\n        \"status\": \"pending\",\n        \"updated_at\": \"2025-01-19T01:24:20.000000Z\",\n        \"created_at\": \"2025-01-19T01:24:20.000000Z\",\n        \"id\": 2\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateStatus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test name up",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "test bio",
+									"type": "text"
+								},
+								{
+									"key": "nationality",
+									"value": "egyptian",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "2000-8-8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/orders/1/status?status=completed",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"1",
+								"status"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "completed"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "test name up",
+											"type": "text"
+										},
+										{
+											"key": "bio",
+											"value": "test bio",
+											"type": "text"
+										},
+										{
+											"key": "nationality",
+											"value": "egyptian",
+											"type": "text"
+										},
+										{
+											"key": "date_of_birth",
+											"value": "2000-8-8",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/orders/1/status?status=completed",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"1",
+										"status"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "completed"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:28:13 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:28:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"order updated successfully!\",\n    \"order\": {\n        \"id\": 1,\n        \"order_number\": \"ORD678C541A84291\",\n        \"user_id\": 2,\n        \"total_price\": \"4242.00\",\n        \"status\": \"completed\",\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T01:23:38.000000Z\",\n        \"updated_at\": \"2025-01-19T01:27:13.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/orders",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "index",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/orders",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:25:04 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:25:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"order_number\": \"ORD678C541A84291\",\n        \"user_id\": 2,\n        \"total_price\": \"4242.00\",\n        \"status\": \"pending\",\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T01:23:38.000000Z\",\n        \"updated_at\": \"2025-01-19T01:23:38.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"order_number\": \"ORD678C54445FDD9\",\n        \"user_id\": 2,\n        \"total_price\": \"4242.00\",\n        \"status\": \"pending\",\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T01:24:20.000000Z\",\n        \"updated_at\": \"2025-01-19T01:24:20.000000Z\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/categories",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "index",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/categories",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:55:39 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:55:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"test name\",\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T00:54:14.000000Z\",\n        \"updated_at\": \"2025-01-19T00:54:14.000000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test name",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/categories",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "test name",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/categories",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:54:14 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:54:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category created successfully!\",\n    \"Category\": {\n        \"name\": \"test name\",\n        \"updated_at\": \"2025-01-19T00:54:14.000000Z\",\n        \"created_at\": \"2025-01-19T00:54:14.000000Z\",\n        \"id\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/categories/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/categories/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"categories",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:56:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:56:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "book",
+			"item": [
+				{
+					"name": "index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/books",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "index",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/books",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:59:39 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:59:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"test title\",\n        \"description\": \"test desc\",\n        \"price\": \"2121.00\",\n        \"stock\": 3,\n        \"author_id\": 2,\n        \"category_id\": 2,\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T00:58:57.000000Z\",\n        \"updated_at\": \"2025-01-19T00:58:57.000000Z\",\n        \"author\": {\n            \"id\": 2,\n            \"name\": \"test name\",\n            \"bio\": \"test bio\",\n            \"date_of_birth\": \"2000-08-08\",\n            \"nationality\": \"egyptian\",\n            \"deleted_at\": null,\n            \"created_at\": \"2025-01-19T00:43:57.000000Z\",\n            \"updated_at\": \"2025-01-19T00:43:57.000000Z\"\n        },\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"test name\",\n            \"deleted_at\": null,\n            \"created_at\": \"2025-01-19T00:57:20.000000Z\",\n            \"updated_at\": \"2025-01-19T00:57:20.000000Z\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "search",
+									"value": "name",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/books/searching",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"books",
+								"searching"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "search",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "search",
+											"value": "name",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/books/searching",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"books",
+										"searching"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:19:36 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:19:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"title\": \"test title\",\n        \"description\": \"test desc\",\n        \"price\": \"2121.00\",\n        \"stock\": 3,\n        \"author_id\": 2,\n        \"category_id\": 2,\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T01:03:25.000000Z\",\n        \"updated_at\": \"2025-01-19T01:03:25.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"title\": \"test title\",\n        \"description\": \"test desc\",\n        \"price\": \"2121.00\",\n        \"stock\": 3,\n        \"author_id\": 2,\n        \"category_id\": 2,\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T01:04:30.000000Z\",\n        \"updated_at\": \"2025-01-19T01:04:30.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"title\": \"test title\",\n        \"description\": \"test desc\",\n        \"price\": \"2121.00\",\n        \"stock\": 3,\n        \"author_id\": 2,\n        \"category_id\": 2,\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T01:06:42.000000Z\",\n        \"updated_at\": \"2025-01-19T01:06:42.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"title\": \"test title\",\n        \"description\": \"test desc\",\n        \"price\": \"2121.00\",\n        \"stock\": 3,\n        \"author_id\": 2,\n        \"category_id\": 2,\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T01:09:06.000000Z\",\n        \"updated_at\": \"2025-01-19T01:09:06.000000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "show",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/books",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "show",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/books/2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"books",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:03:41 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:03:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"title\": \"test title\",\n    \"description\": \"test desc\",\n    \"price\": \"2121.00\",\n    \"stock\": 3,\n    \"author_id\": 2,\n    \"category_id\": 2,\n    \"deleted_at\": null,\n    \"created_at\": \"2025-01-19T01:03:25.000000Z\",\n    \"updated_at\": \"2025-01-19T01:03:25.000000Z\",\n    \"author\": {\n        \"id\": 2,\n        \"name\": \"test name\",\n        \"bio\": \"test bio\",\n        \"date_of_birth\": \"2000-08-08\",\n        \"nationality\": \"egyptian\",\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T00:43:57.000000Z\",\n        \"updated_at\": \"2025-01-19T00:43:57.000000Z\"\n    },\n    \"category\": {\n        \"id\": 2,\n        \"name\": \"test name\",\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T00:57:20.000000Z\",\n        \"updated_at\": \"2025-01-19T00:57:20.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "test title",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test desc",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2121",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "author_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/books",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "test title",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "test desc",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "2121",
+											"type": "text"
+										},
+										{
+											"key": "stock",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "author_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/books",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:58:57 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 00:58:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"book created successfully!\",\n    \"book\": {\n        \"title\": \"test title\",\n        \"description\": \"test desc\",\n        \"price\": \"2121\",\n        \"stock\": \"3\",\n        \"author_id\": \"2\",\n        \"category_id\": \"2\",\n        \"updated_at\": \"2025-01-19T00:58:57.000000Z\",\n        \"created_at\": \"2025-01-19T00:58:57.000000Z\",\n        \"id\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "test title",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test desc",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2121",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "author_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/books/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "test title",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "test desc",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "2121",
+											"type": "text"
+										},
+										{
+											"key": "stock",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "author_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/books/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"books",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:02:01 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:02:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"book updated successfully!\",\n    \"book\": {\n        \"id\": 1,\n        \"title\": \"test title\",\n        \"description\": \"test desc\",\n        \"price\": \"2121.00\",\n        \"stock\": 3,\n        \"author_id\": 2,\n        \"category_id\": 2,\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-19T00:58:57.000000Z\",\n        \"updated_at\": \"2025-01-19T00:58:57.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjMzYTY1NWYzZWQyMjc3M2NkNGViODk5MTVlYTRmNmUyZTdkNWMwZmU5MjMzMDYzY2YxYTBhZjhhNjY2MzcxMDRmMjBhODBhOGM2MWVmYzUiLCJpYXQiOjE3MzcyNDcxNzEuMTQ0NDIsIm5iZiI6MTczNzI0NzE3MS4xNDQ0MjMsImV4cCI6MTc2ODc4MzE3MS4xMzY5MTMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.DYanLrv4gH7KitBUf-QxzGvldFqgcy6p-icAfV0DkRMWrVYrUg6_u3TYY425ryj9QMclv779O1tbqlPIduYGtbjM8gVqxk2RAkXr6ZBYBNMh22MnfIfcUiPhjx2Ew7PDQFHTENgvqQqr1xQqFoXFGzJXakVnxfmUZWs1X5cTKOHp4k5QIrzlz-4bRNSPz225v-kNeNc63yFkXXSst9y-aaUC6efzxsMRLOuZyCHw5rfSVXq43W3xqUCYQBFXCCapu1EOZ1mruqn2Aff0cIYQD0cZ8fOMcJ4KqausnPEA2Ko0Y2bIOSWyoF9FFZuTL1tqD2P7pJBhZdgfkwgAJQAdwIKLNhX3L3JL9v_4qRfqKel2IM40D-fZGLNqhCFE6w6pScoXkwHdmZmDFWBS03WKQA7_Kz5V34gyZVSDnrPx2HVoVmfFXzAiQq2gnRqbwTe3O1wpRyjTS1mdSqj2E6yTkHdAdTa26sH3qeuioh98t9jhKWJhyMNuuDX9evvab0L6gyyndRSe2_zsgquGlMck2hfP5pqyHXnBMDlpQ_eaohLx3MAJxlZXjmQb5pvUZ7zxQ7zWm9o7-zS6b8yEaxEbF5vETzb2r1mayifzEEiObq3sKDmrqzLj1mrgsRN8yTYOomG_1KtnZFvT-uUnZ1ARgNOG0PttW5LFfh0hK3TGRkc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/books/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token sau_sk_test_4bde93d346b786c4e2e4b13b0290983c7929bcdb5d016bbda6df521266c14dc0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/books/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"books",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:02:38 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Jan 2025 01:02:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Book deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
